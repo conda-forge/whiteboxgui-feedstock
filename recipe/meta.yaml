@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
     - ipyfilechooser
     - ipytree
     - ipywidgets
-    - python
+    - python >=3.6
     - whitebox
     - xorg-libx11
 
