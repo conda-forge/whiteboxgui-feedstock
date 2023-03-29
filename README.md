@@ -1,11 +1,11 @@
-About whiteboxgui
-=================
+About whiteboxgui-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/whiteboxgui-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/giswqs/whiteboxgui
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/whiteboxgui-feedstock/blob/main/LICENSE.txt)
 
 Summary: An interactive GUI for WhiteboxTools in a Jupyter-based environment
 
