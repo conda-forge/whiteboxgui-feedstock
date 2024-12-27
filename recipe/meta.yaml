@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: c59dfccb244bc2d7b9ff77c63a81b77d0e1b4a6fc19476449e450e0da009a754
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - ipyfilechooser
     - ipytree
     - ipywidgets
-    - python >=3.6
+    - python >={{ python_min }}
     - whitebox
     - xorg-libx11
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - whiteboxgui
 
